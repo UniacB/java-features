@@ -2,13 +2,11 @@ package org.m4bank.java9;
 
 import java.util.List;
 import java.util.Map;
-import java.util.Objects;
 import java.util.Optional;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-import static org.m4bank.java9.Example.EXAMLE_LIST;
-
+@SuppressWarnings("unused")
 public final class Optionals {
 
     private Optionals() {

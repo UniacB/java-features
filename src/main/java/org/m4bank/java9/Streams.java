@@ -10,6 +10,7 @@ import java.util.stream.Stream;
 
 import static org.m4bank.java9.Example.EXAMLE_LIST;
 
+@SuppressWarnings("unused")
 public final class Streams {
 
     private Streams() {
