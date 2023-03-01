@@ -1,11 +1,9 @@
 package org.m4bank;
 
-import org.m4bank.java9.SomeChanges;
-
-import java.io.IOException;
+import org.m4bank.java9.HttpSender;
 
 public class Main {
     public static void main(String[] args) throws Exception {
-        SomeChanges.fileReadBeforeJava9();
+        HttpSender.sendRequestAndPrintResponse();
     }
 }

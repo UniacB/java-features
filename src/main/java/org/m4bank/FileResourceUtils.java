@@ -5,6 +5,7 @@ import java.io.InputStream;
 import java.net.URISyntaxException;
 import java.net.URL;
 
+@SuppressWarnings("unused")
 public final class FileResourceUtils {
 
     private FileResourceUtils() {

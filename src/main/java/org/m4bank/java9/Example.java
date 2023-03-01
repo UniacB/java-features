@@ -4,6 +4,7 @@ import java.util.List;
 
 import static org.m4bank.java9.Streams.takeWhile;
 
+@SuppressWarnings("unused")
 public class Example {
 
     public static final List<Example> EXAMLE_LIST = List.of(
