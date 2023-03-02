@@ -1,7 +1,6 @@
 package org.m4bank;
 
 import java.io.File;
-import java.io.InputStream;
 import java.net.URISyntaxException;
 import java.net.URL;
 
@@ -9,23 +8,6 @@ import java.net.URL;
 public final class FileResourceUtils {
 
     private FileResourceUtils() {
-    }
-
-    // get a file from the resources folder
-    // works everywhere, IDEA, unit test and JAR file.
-    public static InputStream getFileFromResourceAsStream(String fileName) {
-
-        // The class loader that loaded the class
-        ClassLoader classLoader = FileResourceUtils.class.getClassLoader();
-        InputStream inputStream = classLoader.getResourceAsStream(fileName);
-
-        // the stream holding the file content
-        if (inputStream == null) {
-            throw new IllegalArgumentException("file not found! " + fileName);
-        } else {
-            return inputStream;
-        }
-
     }
 
     /*

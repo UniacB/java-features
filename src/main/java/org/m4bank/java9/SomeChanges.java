@@ -6,6 +6,8 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 import java.net.URISyntaxException;
+import java.util.List;
+import java.util.stream.Collectors;
 
 @SuppressWarnings("unused")
 public final class SomeChanges {
@@ -37,6 +39,9 @@ public final class SomeChanges {
             System.out.println(reader1.readLine());
             System.out.println(reader1.readLine());
         }
+    }
 
+    public static List<StackWalker.StackFrame> stackWalker() {
+        return StackWalker.getInstance().walk(s -> s.limit(10).collect(Collectors.toList()));
     }
 }
