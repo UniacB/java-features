@@ -3,3 +3,5 @@
 /build/
 /build/classes/java/main/
 /.idea/
+/out/
+/src/test/generated_tests/
