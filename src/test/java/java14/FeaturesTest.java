@@ -27,4 +27,16 @@ class FeaturesTest {
         System.out.println(string2);
         Assertions.assertEquals("Object is not instance of String", string2);
     }
+
+    @Test
+    void helpfulNPE() {
+        Features.User user = null;
+        Assertions.assertNull(user);
+        try {
+            int age = user.age();
+            System.out.println(age);
+        } catch (NullPointerException e) {
+            e.printStackTrace();
+        }
+    }
 }
